@@ -51,4 +51,6 @@ public class Feet {
         }
     }
 
+    public String getOption() { return option;
+    }
 }

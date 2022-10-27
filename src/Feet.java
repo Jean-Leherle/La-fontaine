@@ -53,4 +53,12 @@ public class Feet {
 
     public String getOption() { return option;
     }
+
+    public void showFeet(){
+        System.out.println("phrase : "+this.getPhrase());
+        System.out.println("number of syllable : "+this.getSyllable());
+        System.out.println("rhyme : "+this.getRhyme());
+        System.out.println("option : "+this.getOption());
+        System.out.println("themes : " +this.getThemes());
+    }
 }

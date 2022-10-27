@@ -38,3 +38,6 @@ Je réalise ceci seul en maintenant une recherche d'emploi active ainsi que dans
   - Préparation des todos.
   - Rédaction du ReadMe.
   - Mise en ligne sur GIT.
+- Jeudi 27 octobre après-midi : 
+  - découverte [des patrons de conceptions](https://refactoring.guru/fr/design-patterns/catalog) 
+  - ajout de fonction mineur d'affichage d'un vers et premiers tests.

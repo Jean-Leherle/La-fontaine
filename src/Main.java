@@ -16,12 +16,6 @@ public class Main {
 
         Feet feet1 = new Feet("La lune est belle", 5, "el", theme, "fin");
 
-        System.out.println(feet1.getPhrase());
-        System.out.println(feet1.getSyllable());
-        System.out.println(feet1.getRhyme());
-        System.out.println(feet1.getOption());
-        System.out.println(feet1.getThemes());
-
-
+        feet1.showFeet();
     }
 }

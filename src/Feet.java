@@ -1,3 +1,6 @@
+import java.math.BigInteger;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 public class Feet {
@@ -61,4 +64,37 @@ public class Feet {
         System.out.println("option : "+this.getOption());
         System.out.println("themes : " +this.getThemes());
     }
+    public boolean addFeet(){
+        assert (this.phrase !=null );
+        assert (this.themes !=null);
+        assert (this.rhyme != null);
+
+
+        String request = "INSERT INTO feet (phrase, syllable, rhyme, option) VALUES ('"
+                +this.phrase +"' , "
+                +this.syllable +" , '"
+                +this.rhyme +"' , '"
+                +this.option +"') returning *;";
+System.out.println(request);
+        ResultSet result = Database.sendRequest(request);
+        if(result==null){
+            return false;
+        };
+        Integer id = null;
+        try {
+            result.next();
+            id = result.getInt(1);
+            System.out.println( result.getString(1));
+
+            result.close();
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        return true;
+    }
+
+
+
 }

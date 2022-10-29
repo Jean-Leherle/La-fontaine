@@ -3,9 +3,9 @@ import java.sql.*;
 public class Database {
 
     //test avec une bdd déjà existante
-    private static final String url = "jdbc:postgresql://localhost:5432/zeng";
-    private static final String user = "zeng";
-    private static final String passwd = "zeng";
+    private static final String url = "jdbc:postgresql://localhost:5432/la_fontaine";
+    private static final String user = "la_fontaine";
+    private static final String passwd = "jean";
 
             /*
                 url = "jdbc:postgresql://localhost:5432/la_fontaine";

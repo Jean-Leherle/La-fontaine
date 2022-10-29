@@ -41,3 +41,10 @@ Je réalise ceci seul en maintenant une recherche d'emploi active ainsi que dans
 - Jeudi 27 octobre après-midi : 
   - découverte [des patrons de conceptions](https://refactoring.guru/fr/design-patterns/catalog) 
   - ajout de fonction mineur d'affichage d'un vers et premiers tests.
+- Vendredi 28 octobre :
+  - Ajout d'une connection à une bdd pgsql (il manque un moyen de masquer les données de connection : .env)
+  - test et affichage d'une autre bdd.
+  - Samedi 29 octobre :
+    - Création incomplète d'une requête pour les vers
+    - réflexion en cours sur l'algorithme de création de poème.
+  

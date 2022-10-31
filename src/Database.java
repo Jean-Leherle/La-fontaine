@@ -5,7 +5,7 @@ public class Database {
     //test avec une bdd déjà existante
     private static final String url = "jdbc:postgresql://localhost:5432/la_fontaine";
     private static final String user = "la_fontaine";
-    private static final String passwd = "jean";
+    private static final String passwd = "jean"; //pour le moment en claire todo ajouter des variables d'environnement ou equivalent
 
             /*
                 url = "jdbc:postgresql://localhost:5432/la_fontaine";

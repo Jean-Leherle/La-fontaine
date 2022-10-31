@@ -7,21 +7,22 @@ public class Main {
 //todo  : avoir une base d'objet lié au poeme fonctionnel : génération possible
 // todo détailler les règles.
 //todo : créer un serveur fonctionel avec une route pour poster des vers et une route pour rédiger un poeme.
+    // todo traitement de texte pour doubler les apostrophes (caractére d'echapement)
     public static void main(String[] args){
         System.out.println("Hello World");
 
         //exemple de verification
         ArrayList<String> theme = new ArrayList<>();
-        theme.add("lune");
-        theme.add("nuit");
-        theme.add("soir");
-        theme.add("ciel");
+        theme.add("transport");
+        theme.add("objectif");
+        theme.add("chemin");
+        theme.add("moral");
 
-        Feet feet1 = new Feet("La lune est belle", 5, "el", theme, "fin");
+        Feet feet1 = new Feet("Quand l''objectif remplace le chemin", 10, "min", theme);
 
         feet1.showFeet();
 
-        ResultSet results = Database.sendRequest("Select * FROM feet limit 2;");
+        ResultSet results = Database.sendRequest("Select * FROM feet;");
 
         ResultSetMetaData rsmd;
         try {

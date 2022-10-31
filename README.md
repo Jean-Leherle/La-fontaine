@@ -22,29 +22,9 @@ Pour la mise en ligne, rien n'est définie pour le moment et il n'est pas certai
 
 C'est afin de répondre à d'avantage d'offre d'emploi que je choisis en sortant d'une formation intensive de JavaScript de découvrir en un minimum de temps possible Java.
 Le sujet du projet n'a pour seule vocation que d'être original et pédagogique.
-Je réalise ceci seul en maintenant une recherche d'emploi active ainsi que dans un contexte personnel compliqué (décès d'un animal de compagnie). Les résultats ou délais de réalisation de ceci peuvent donc en être impacté.
+Je réalise ceci seul en maintenant une recherche d'emploi active ainsi que dans un contexte personnel compliqué. Les résultats ou délais de réalisation de ceci peuvent donc en être impacté je maintiens [un fichier de suivie](chronologie.md).
 
+## Prérequis ##
 
-### Chronologie ###
-
-- Lundi 24 octobre, début du projet : 
-  - recherche d'une idée et des limites techniques.
-  - Installation et découverte de IntelliJ comme IDE plus adapté que VSC à du development en Java.
-- Mardi 25 octobre, Découverte de JAVA : 
-  - Suivie de [cette série de tutos](https://www.youtube.com/watch?v=qWb_DsW0q2g&list=PLMS9Cy4Enq5LKYxJmD1ZIu3C7f3vA00hM) et lecture [d'article de blog](https://www.digitalocean.com/community/tutorials/public-static-void-main-string-args-java-main-method).
-- Mercredi 26 octobre, Début du code :
-  - Fin de la série de tutos. 
-  - Création des premieres classes.
-  - Préparation des todos.
-  - Rédaction du ReadMe.
-  - Mise en ligne sur GIT.
-- Jeudi 27 octobre après-midi : 
-  - découverte [des patrons de conceptions](https://refactoring.guru/fr/design-patterns/catalog) 
-  - ajout de fonction mineur d'affichage d'un vers et premiers tests.
-- Vendredi 28 octobre :
-  - Ajout d'une connection à une bdd pgsql (il manque un moyen de masquer les données de connection : .env)
-  - test et affichage d'une autre bdd.
-  - Samedi 29 octobre :
-    - Création incomplète d'une requête pour les vers
-    - réflexion en cours sur l'algorithme de création de poème.
-  
+Le paramétrage de pgsql n'est pas repris dans le [fichier SQL de creation de la bdd](createDb.sql). il faudra créer une base de donné et un user propriétaire avec mdp et rapporter ces identifiants de connexion dans le fichier [Database](src/Database.java) : quand j'aurai trouvé comment faire, il suffira de mettre à jour les variables d'environnements.
+Je teste et fait fonctionner sur fedora 36 en localhost avec pgsql 14.5. et openjdk 17.0.4.1

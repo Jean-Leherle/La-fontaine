@@ -38,7 +38,12 @@ public class Main {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-
-        feet1.addFeet();
+    Rule test = new Rule("A B B,C B B", theme, 1);
+        for(String[] distique : test.formateModel() ){
+            for(String value : distique){
+                    System.out.print(value + "/");
+            }
+            System.out.println();
+        }
     }
 }

@@ -7,8 +7,8 @@ public class Rule {
         private int verseNumber;
 
     public Rule (String model, ArrayList<String> themes, int verseNumber){
-        //todo verifier que model correspond aux regles
-        this.model = model;
+        //todo verifier que model correspond aux règles
+        this.model = model; //format "A B B A"
         this.themes = themes;
         this.verseNumber = verseNumber;
     }
@@ -37,5 +37,29 @@ public class Rule {
 
     public void setVerseNumber(int verseNumber) {
         this.verseNumber = verseNumber;
+    }
+
+    public String[][] formateModel(){
+        /**
+         * le but est de pouvoir traiter un model tel que "a b b,c b b" qui rendrait :
+         *
+         * rimeEn[a]
+         * rimeEn[b]
+         * rimeEn[b]
+         *
+         * rimeEn[c]
+         * rimeEn[b]
+         * rimeEn[b]
+         *
+         */
+        String[] distiqueNotFormate = this.model.split(",");
+        
+        String[][] distiqueFormate = new String[distiqueNotFormate.length][];
+        
+        for (int i = 0; i<distiqueNotFormate.length; i++){
+            distiqueFormate[i]=distiqueNotFormate[i].split(" ");
+        }
+        System.out.println(distiqueFormate);
+        return distiqueFormate;
     }
 }

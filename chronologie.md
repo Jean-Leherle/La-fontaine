@@ -26,4 +26,6 @@
 - Lundi 31 octobre : 
   - Amélioration de la documentation
   - découverte d'un problème lors d'ajout d'apostrophe dans une phrase lors de la requête.
-  
+- Mardi et Mercredi  01/11 et 02/11 :
+  - repos (encore ?!)
+- Jeudi 03 Novembre :

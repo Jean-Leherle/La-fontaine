@@ -18,7 +18,7 @@ public class Rule {
     }
 
     public void setModel(String model) {
-        //todo verifier que model correspond aux regles
+        //todo verifier que model correspond aux règles
         model = model;
     }
 
@@ -62,4 +62,13 @@ public class Rule {
         System.out.println(distiqueFormate);
         return distiqueFormate;
     }
+    /**
+     * Rule test = new Rule("A B B,C B B", theme, 1);
+     *         for(String[] distique : test.formateModel() ){
+     *             for(String value : distique){
+     *                     System.out.print(value + "/");
+     *             }
+     *             System.out.println();
+     *         }
+     */
 }

@@ -28,4 +28,4 @@
   - découverte d'un problème lors d'ajout d'apostrophe dans une phrase lors de la requête.
 - Mardi et Mercredi  01/11 et 02/11 :
   - repos (encore ?!)
-- Jeudi 03 Novembre :
+- Jeudi 03 novembre : Début de cours sur udemy au sujet de Spring boot et angular. Le projet est donc en pause durant la formation.

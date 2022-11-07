@@ -10,7 +10,7 @@ Lier et afficher avec Angular dans un second temps afin d'apprendre le fonctionn
 
 Algorithmie : les bases de java devraient suffire.
 
-Back : peut-être que l'utilisation de [javalin](https://javalin.io/) facilitera la mise en ligne.
+Back : Projet spring pour la mise en ligne.
 
 Data : la bdd sera sous format SQL si possible, mais je n'exclus pas la possibilité d'utiliser mongo db.
 
@@ -28,3 +28,8 @@ Je réalise ceci seul en maintenant une recherche d'emploi active ainsi que dans
 
 Le paramétrage de pgsql n'est pas repris dans le [fichier SQL de creation de la bdd](createDb.sql). il faudra créer une base de donné et un user propriétaire avec mdp et rapporter ces identifiants de connexion dans le fichier [Database](src/Database.java) : quand j'aurai trouvé comment faire, il suffira de mettre à jour les variables d'environnements.
 Je teste et fait fonctionner sur fedora 36 en localhost avec pgsql 14.5. et openjdk 17.0.4.1
+
+## Evolution ##
+
+Suite à un début de formation sur spring boot, il sera plus simple de terminer ce projet sans mise en ligne avec uniquement une mécanique de génération de poème fonctionnel. 
+La création d'un projet spring intégrant cette mécanique pour la mise en ligne sera plus adaptée.
